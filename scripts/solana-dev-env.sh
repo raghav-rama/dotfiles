@@ -61,6 +61,7 @@ $exec_geek 'git config --global user.email hackerer528@gmail.com'
 $exec_geek 'git config --global user.name raghav-rama'
 $exec_geek 'git config --global user.signingkey ~/.ssh/id_ed25519_hackerer528.pub'
 $exec_geek 'git config --global gpg.format ssh'
+$exec_geek 'chmod 400 .ssh/id_ed25519_hackerer528'
 
 $exec_geek 'echo '123' | sudo -S apt install zsh -y'
 $exec_geek 'echo '123' | chsh --shell /usr/bin/zsh'
