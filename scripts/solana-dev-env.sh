@@ -67,7 +67,7 @@ $exec_geek 'echo '123' | sudo -S apt install zsh -y'
 $exec_geek 'echo '123' | chsh --shell /usr/bin/zsh'
 $exec_geek 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended'
 
-$exec_geek 'curl https://sh.rustup.rs -sSf | sh -s -- --default-host x86_64-unknown-linux-gnu  --default-toolchain stable --profile default -y'
+$exec_geek 'curl https://sh.rustup.rs -sSf | sh -s -- --default-host x86_64-unknown-linux-gnu  --default-toolchain nightly --profile default -y'
 $exec_geek 'source .zshrc'
 
 $exec_geek 'sh -c "$(curl -sSfL https://release.solana.com/v1.14.10/install)"'
