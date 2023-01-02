@@ -43,7 +43,7 @@ zstyle ':omz:update' frequency 1
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -80,12 +80,9 @@ plugins=(git
 	ssh-agent
 )
 
-
 zstyle :omz:plugins:ssh-agent identities id_ed25519_hackerer528
 
-
-
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -121,4 +118,4 @@ export NVM_DIR="$HOME/.nvm"
 alias compile-contract=cargo-build-sbf --manifest-path=Cargo.toml --sbf-out-dir=myprogram
 
 source ~/.AtomicCoding
-. ~/.oh-my-zsh/oh-my-zsh.sh
+. $ZSH/oh-my-zsh.sh
