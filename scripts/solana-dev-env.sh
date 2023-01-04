@@ -89,7 +89,7 @@ $exec_geek 'source .zshrc'
 $exec_geek 'avm install latest'
 $exec_geek 'avm use latest'
 
-$exec_geek 'echo 'alias compile-contract="cargo-build-sbf --manifest-path=Cargo.toml --sbf-out-dir=myprogram"' >> .zshrc'
+$exec_geek 'echo 'alias cgbpf="cargo-build-sbf --manifest-path=Cargo.toml --sbf-out-dir=myprogram"' >> .zshrc'
 $exec_geek 'source .zshrc'
 
 $exec_geek 'git clone https://github.com/neovim/neovim .neovim'
