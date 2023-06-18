@@ -70,7 +70,7 @@ $exec_geek 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzs
 $exec_geek 'curl https://sh.rustup.rs -sSf | sh -s -- --default-host x86_64-unknown-linux-gnu  --default-toolchain nightly --profile default -y'
 $exec_geek 'source .zshrc'
 
-$exec_geek 'sh -c "$(curl -sSfL https://release.solana.com/v1.14.10/install)"'
+$exec_geek 'sh -c "$(curl -sSfL https://release.solana.com/beta/install)"'
 
 #GEEK_PATH=$(su - geek -c env | grep PATH)
 #GEEK_PATH=${PATH=/}
