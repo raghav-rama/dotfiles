@@ -111,11 +111,56 @@ zstyle :omz:plugins:ssh-agent identities id_ed25519_hackerer528
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=/home/geek/.local/share/solana/install/active_release/bin:/home/geek/.local/bin:/home/geek/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 alias compile-contract=cargo-build-sbf --manifest-path=Cargo.toml --sbf-out-dir=myprogram
 
 source ~/.AtomicCoding
 . $ZSH/oh-my-zsh.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Commented on 8th Oct, 2024 1:32 PM
+# export PATH=$PATH:/usr/local/go/bin
+# export PATH=$PATH:/home/hackerboy/echidna
+
+
+# Commented on 8th Oct, 2024 1:32 PM
+# export MODULAR_HOME="/home/hackerboy/.modular"
+# export PATH="/home/hackerboy/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+
+export CC=clang
+export CXX=clang++
+export CXXFLAGS="-std=c++11"
+export CPLUS_INCLUDE_PATH=/usr/include/c++/11:/usr/include/x86_64-linux-gnu/c++/11
+export LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11:/usr/include/x86_64-linux-gnu/c++/11/bits
+export LD_LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11:/usr/include/x86_64-linux-gnu/c++/11/bits
+
+eval "$(atuin init zsh)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Android, commented on 8th Oct, 2024 1:32 PM
+# export PATH=$PATH:~/android_sdk/cmdline-tools/latest/bin
+# export PATH=$PATH:~/android_sdk/platform-tools
+
+
+# Created by `pipx` on 2024-03-22 16:20:01
+export PATH="$PATH:/home/hackerboy/.local/bin"
+
+export PATH=/usr/local/cuda-12.4/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+# bun completions
+[ -s "/home/hackerboy/.bun/_bun" ] && source "/home/hackerboy/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+. "/home/hackerboy/.starkli/env"
+
+[[ "$TERM_PROGRAM" == "vscode" ]] && unset ARGV0
+
+. "$HOME/.atuin/bin/env"
